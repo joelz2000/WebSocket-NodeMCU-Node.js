@@ -25,7 +25,7 @@ server.listen(port, hostname, () => {
 /*Indica al node que inicie con un index.html */
 app.use(express.static('public'));
 
-var mensaje = [{}];
+var mensaje = "";
 
 /**El io.on comprueba si hay una conexion del cliente */
 io.on('connection', function(socket) {
@@ -37,12 +37,12 @@ io.on('connection', function(socket) {
     /* Esta funcion sirve para obtener el mensaje que se envia desde el main.js en public*/
     socket.on('new-message', function(data) {
 
-      mensaje.push(data);
+      //mensaje.push(data);
 
       //Imprime la informacion en la consola.
-      console.log(mensaje);
+      console.log(data);
 
         //Envia la informacion a los clientes
-      io.emit('messages', mensaje);
+      io.sockets.emit('messages', data);
     });
  });
