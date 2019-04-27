@@ -1,6 +1,6 @@
 # WebSocket-NodeMCU-Node.js
 
-Es un sistema de comunicación entre un servidor y un cliente mediante el Internet Wifi, mediante un dispositivo electrónico llamado NodeMCU y el lenguaje de programación Node.js. Lo que realiza este sistema es mandar un mensaje mediante un formulario web y su destinario es en la placa de NodeMCU.
+Es un sistema de comunicación entre un servidor y un cliente mediante el Internet Wifi, un dispositivo electrónico llamado NodeMCU y el lenguaje de programación Node.js. Lo que realiza este sistema es mandar un mensaje mediante un formulario web y su destinario es en la placa de NodeMCU.
 
 ## Comenzando 🚀
 
